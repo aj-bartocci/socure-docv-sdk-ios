@@ -8,6 +8,9 @@ let package = Package(
         .library(
             name: "SocureDocV",
             targets: ["SocureDocV"]),
+        .library(
+            name: "SocureSDK",
+            targets: ["SocureSDK"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -18,6 +21,10 @@ let package = Package(
             name: "SocureDocV",
             url: "https://sdk.socure.com/socure-sdks/docv/ios/socure-docv-4.3.1.zip",
             checksum: "909410c4af79737c8f7df388112cfd26218fc1f83ffa8f7eff3bf912aca7d934"
+        ),
+        .binaryTarget(
+            name: "SocureSDK",
+            path: "Deprecated/Framework/SocureSdk.xcframework"
         )
     ]
 )
