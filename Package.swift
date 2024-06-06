@@ -11,6 +11,9 @@ let package = Package(
         .library(
             name: "SocureSDK",
             targets: ["SocureSDK"]),
+        .library(
+            name: "TrustKit",
+            targets: ["TrustKit"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -25,6 +28,10 @@ let package = Package(
         .binaryTarget(
             name: "SocureSDK",
             path: "Deprecated/Framework/SocureSdk.xcframework"
+        ),
+        .binaryTarget(
+            name: "TrustKit",
+            path: "Deprecated/Framework/TrustKit.xcframework"
         )
     ]
 )
