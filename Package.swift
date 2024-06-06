@@ -31,7 +31,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "TrustKit",
-            path: "Deprecated/Framework/TrustKit.xcframework"
+            path: "Deprecated/Framework/TrustKit.framework"
         )
     ]
 )
